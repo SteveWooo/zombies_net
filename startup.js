@@ -4,7 +4,9 @@ async function main(){
 	try{
 		swc = await require("./keke_stage/server/models/swc/init")();
 		swc = await require('./controllers/access')(swc, {});
-		//swc.startup(swc);
+
+		await swc.services.zbnet.startup(swc, {});
+
 	}catch(e){
 		console.log(e);
 		process.exit();
