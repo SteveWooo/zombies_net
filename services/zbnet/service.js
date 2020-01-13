@@ -1,4 +1,5 @@
 module.exports = {
+    init : require(`${__dirname}/init.js`),
     startup : require(`${__dirname}/startup.js`),
     server : undefined,
 

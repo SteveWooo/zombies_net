@@ -3,7 +3,8 @@ module.exports = async (swc, options)=>{
 		serviceName : 'zbnet',
 		path : `${__dirname}/../services/zbnet/service`
 	})
-
+	await swc.services.zbnet.init(swc, {});
+	
 	return swc;
 }
 	
