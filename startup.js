@@ -1,7 +1,7 @@
 
 async function main(){
 	var swc;
-	try{
+	try{ 
 		swc = await require("./keke_stage/server/models/swc/init")();
 		swc = await require('./controllers/access')(swc, {});
 
