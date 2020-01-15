@@ -3,5 +3,9 @@ module.exports = {
     startup : require(`${__dirname}/startup.js`),
     server : undefined,
 
-    saveCmd : require(`${__dirname}/handles/saveCmd`)
+    handles : {
+        saveCmd: require(`${__dirname}/handles/saveCmd`),
+        runCmd: require(`${__dirname}/handles/runCmd`)
+    }
+    
 }
